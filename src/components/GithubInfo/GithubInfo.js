@@ -1,12 +1,13 @@
 import React from 'react'
 import AutoAxios from './AutoAxios';
+import Header from './Header';
 
 
 class GithubInfo extends React.Component {
   render () {
     return(
         <div>
-            <h1>GithubInfo</h1>
+            <Header />
             <AutoAxios />
         </div>
 

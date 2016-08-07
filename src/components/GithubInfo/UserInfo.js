@@ -20,6 +20,7 @@ class UserInfo extends Component {
             <span>repos</span>
           </li>
         </ul>
+        <h3>My Github ID : <a href="https://github.com/zhouxuanpo">zhouxuanpo</a></h3>
       </div>
     );
   }

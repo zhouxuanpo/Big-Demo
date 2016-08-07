@@ -1,6 +1,6 @@
 import React from 'react'
 import List from './List'
-
+import Header from './Header';
 
 
 class Blog extends React.Component {
@@ -14,6 +14,7 @@ class Blog extends React.Component {
       }
     return(
         <div style={styles.root}>
+          <Header />
           <List />
         </div>
     )

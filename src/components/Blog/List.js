@@ -5,17 +5,17 @@ import axios from 'axios';
 import CircularProgress from 'material-ui/CircularProgress';
 
 
-
-let blogs = [
-    {index:'1',title:'Hello World',date:'2016年7月8日'},
-    {index:'2',title:'React',date:'2016年7月1日'},
-    {index:'3',title:'Bootstrap',date:'2016年6月25日'},
-    {index:'4',title:'HTML5',date:'2016年6月16日'},
-    {index:'5',title:'CSS3',date:'2016年6月2日'},
-    {index:'6',title:'QQ',date:'2016年6月2日'},
-    {index:'7',title:'weChat',date:'2016年6月2日'},
-    {index:'8',title:'Good Job',date:'2016年6月2日'}
-]
+//
+// let blogs = [
+//     {index:'1',title:'Hello World',date:'2016年7月8日'},
+//     {index:'2',title:'React',date:'2016年7月1日'},
+//     {index:'3',title:'Bootstrap',date:'2016年6月25日'},
+//     {index:'4',title:'HTML5',date:'2016年6月16日'},
+//     {index:'5',title:'CSS3',date:'2016年6月2日'},
+//     {index:'6',title:'QQ',date:'2016年6月2日'},
+//     {index:'7',title:'weChat',date:'2016年6月2日'},
+//     {index:'8',title:'Good Job',date:'2016年6月2日'}
+// ]
 
 
 class List extends React.Component {
@@ -31,18 +31,12 @@ class List extends React.Component {
         // use math random to avoid browser cache
         let address = `https://raw.githubusercontent.com/zhouxuanpo/Big-Demo/master/posts/index.json?v=${Math.random()}`
         axios.get(address).then((res) => {
-          console.log(res);
-          console.log(address);
           this.setState({
             posts: res.data,
             wait: false
           });
         });
       }
-
-
-
-
     render () {
         console.log(this.props.search)
         let styles = {
@@ -61,19 +55,15 @@ class List extends React.Component {
         var blogCards = [];
         map((b) =>  {
                       blogCards.push(
-                        <BlogCard title={b.title} date={b.created_at } index={b.id} key={Math.random()}/>
+                        <BlogCard title={b.title} date={b.created_at } url={b.name} index={b.id} key={Math.random()}/>
                       );
                     },
             this.state.posts
         );
-
-
-
-
         return(
             <div style={styles.list}>
-            {this.state.wait ? <div style={styles.circle}><CircularProgress size={1.5} /></div> : ''}
-            {blogCards}
+                {this.state.wait ? <div style={styles.circle}><CircularProgress size={1.5} /></div> : ''}
+                {blogCards}
             </div>
         )
     }

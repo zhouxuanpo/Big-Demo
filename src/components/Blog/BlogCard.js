@@ -1,7 +1,15 @@
 import React from 'react';
+import { Router , hashHistory } from 'react-router';
+
+
 
 class BlogCard extends React.Component {
+    handleClick(){
+        hashHistory.push(`blog/${this.props.url}`);
+        // console.log(hashHistory);
+    }
     render () {
+        console.log(this.props.url)
         let smallBody={
             float:'left',
             textDecoration:'none',
@@ -37,7 +45,7 @@ class BlogCard extends React.Component {
             paddingBottom:'20px',
         }
         return (
-            <a className='card' style={smallBody}>
+            <a className='card' style={smallBody} onClick={this.handleClick.bind(this)}>
                 <div style={leftBar}>
                     <p>{this.props.index}</p>
                 </div>

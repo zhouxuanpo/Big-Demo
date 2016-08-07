@@ -16,12 +16,10 @@ class Home extends React.Component {
               position:'absolute',
               top:'50%',
               marginTop:'-136px',
-            //   left:'50%',
-            //   marginLeft:'-184px',
               fontSize:'72px',
               padding:'100px 0',
+              zIndex:'1',
               background:'#000',
-            // border:'1px solid #fff'
           }
 
       }

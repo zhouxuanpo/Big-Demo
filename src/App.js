@@ -4,6 +4,8 @@ import { Link } from 'react-router';
 import IconButton from 'material-ui/IconButton';
 import MenuButton from 'material-ui/svg-icons/navigation/menu';
 import NavBar from './NavBar';
+import Footer from './components/Footer/Footer';
+
 
 class App extends React.Component {
   getChildContext() {
@@ -28,6 +30,7 @@ class App extends React.Component {
                  position:'fixed',
                  left:'0',
                  top:'0',
+                 zIndex:'20'
              }
        }
     return(
@@ -41,7 +44,7 @@ class App extends React.Component {
           </div>
 
           {this.props.children}
-
+<Footer />
       </div>
     )
   }

@@ -29,27 +29,37 @@ export default class DrawerUndockedExample extends React.Component {
             cursor:'pointer',
             marginTop:'5px',
         },
+        top:{
+            color:'rgb(0, 188, 212)',
+            backgroundColor:'rgba(0, 0, 0, 0.5)',
+            height:'80px',
+            lineHeight:'80px',
+            fontSize:'24px'
+        },
         link:{
             display:'block',
             textDecoration:'none',
+            color:'#000'
         },
         containerStyles:{
             background:'rgba(255,255,255,0.85) 0%',
             zIndex:'211112',
         }
     }
+
+    // <AppBar title="ZhouXuan@"  onTouchTap={this.handleClose.bind(this)} />
     return (
       <div style={styles.draw}  >
         <Drawer
         className="aaa"
           docked={false}
-          width={200}
+          width={230}
           containerStyle={styles.containerStyles}
           style={styles.draw}
           open={this.state.open}
           onRequestChange={(open) => this.setState({open})}
         >
-          <AppBar title="周璇"  onTouchTap={this.handleClose.bind(this)} />
+          <MenuItem style={styles.top}>ZhouXuan@</MenuItem>
           <MenuItem style={styles.menuItem} onTouchTap={this.handleClose.bind(this)}><Link to="/" style={styles.link}>Home</Link></MenuItem>
           <MenuItem style={styles.menuItem} onTouchTap={this.handleClose.bind(this)}><Link to="githubInfo" style={styles.link}>Github Info</Link></MenuItem>
           <MenuItem style={styles.menuItem} onTouchTap={this.handleClose.bind(this)}><Link to="blog" style={styles.link}>Blog</Link></MenuItem>

@@ -6,7 +6,6 @@ import { Router , hashHistory } from 'react-router';
 class BlogCard extends React.Component {
     handleClick(){
         hashHistory.push(`blog/${this.props.url}`);
-        // console.log(hashHistory);
     }
     render () {
         console.log(this.props.url)

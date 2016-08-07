@@ -6,7 +6,7 @@ import Home from './components/Home/Home.js';
 import About from './components/About/About.js';
 import GithubInfo from './components/GithubInfo/GithubInfo.js';
 import Blog from './components/Blog/Blog.js';
-import Post from './components/Blog/Blog.js';
+import Post from './components/Blog/Post.js';
 
 
 

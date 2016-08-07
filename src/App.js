@@ -4,9 +4,6 @@ import { Link } from 'react-router';
 import IconButton from 'material-ui/IconButton';
 import MenuButton from 'material-ui/svg-icons/navigation/menu';
 import NavBar from './NavBar';
-// import Header from './components/Header/Header';
-// import Footer from './components/Footer/Footer';
-
 
 class App extends React.Component {
   getChildContext() {
@@ -33,7 +30,6 @@ class App extends React.Component {
                  top:'0',
              }
        }
-    //    <Header /><Footer />
     return(
       <div>
 

@@ -63,6 +63,7 @@ export default class DrawerUndockedExample extends React.Component {
           <MenuItem style={styles.menuItem} onTouchTap={this.handleClose.bind(this)}><Link to="/" style={styles.link}>Home</Link></MenuItem>
           <MenuItem style={styles.menuItem} onTouchTap={this.handleClose.bind(this)}><Link to="githubInfo" style={styles.link}>Github Info</Link></MenuItem>
           <MenuItem style={styles.menuItem} onTouchTap={this.handleClose.bind(this)}><Link to="blog" style={styles.link}>Blog</Link></MenuItem>
+          <MenuItem style={styles.menuItem} onTouchTap={this.handleClose.bind(this)}><Link to="skill" style={styles.link}>Skill</Link></MenuItem>
           <MenuItem style={styles.menuItem} onTouchTap={this.handleClose.bind(this)}><Link to="about" style={styles.link}>About</Link></MenuItem>
         </Drawer>
       </div>

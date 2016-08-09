@@ -61,7 +61,7 @@ class List extends React.Component {
             this.state.posts
         );
         return(
-            <div style={styles.list}>
+            <div className="cardList" style={styles.list}>
                 {this.state.wait ? <div style={styles.circle}><CircularProgress size={1.5} /></div> : ''}
                 {blogCards}
             </div>

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import marked from 'marked';
 import Header from './Header';
+import hljs from 'highlight.js';
 
 
 class Post extends Component {
@@ -26,11 +27,19 @@ class Post extends Component {
 
   render(){
     let content = marked(this.state.rawContent!='' ? this.state.rawContent : '请稍等......' );
+    let styles={
+        post_content:{
+            width:'60%',
+            margin:'0 auto',
+
+        }
+    }
+
+    // { this.props.params.title }
     return(
       <div>
         <Header />
-        { this.props.params.title }
-        <div className="post-content">
+        <div className="post-content" style={styles.post_content}>
           <span dangerouslySetInnerHTML={{__html: content}} />
         </div>
       </div>

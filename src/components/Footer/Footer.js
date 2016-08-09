@@ -7,7 +7,7 @@ import React from 'react';
 class Footer extends React.Component {
     render () {
         let styles = {
-            padding:'135px 0',
+            padding:'35px 0 135px 0',
             textAlign: 'center',
             backgroundColor: '#212121',
             color: '#fff',
@@ -17,7 +17,7 @@ class Footer extends React.Component {
         }
         return(
             <div style={styles}>
-                Footer
+                <h2>只要我们能梦想的，我们就能实现。</h2>
             </div>
         )
     }

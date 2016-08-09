@@ -21,10 +21,12 @@ class App extends React.Component {
                    marginLeft:'10px',
                    width: '52px',
                    height: '52px',
+
              },
              svg: {
                    width: '32px',
                    height: '32px',
+                   fill:'#ADECFF',
              },
              IconDiv:{
                  position:'fixed',
@@ -44,7 +46,7 @@ class App extends React.Component {
           </div>
 
           {this.props.children}
-<Footer />
+          <Footer />
       </div>
     )
   }

@@ -16,7 +16,7 @@ class BlogCard extends React.Component {
             height:'90px',
             margin:'15px 0',
             color:'#777777',
-            boxShadow: '0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)',
+            // boxShadow: '0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)',
             cursor:'pointer',
         }
         let leftBar={

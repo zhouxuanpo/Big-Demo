@@ -46,14 +46,14 @@ class EchartSkill extends Component {
         let styles={
             main:{
                 width:'60%',
-                height:'60%',
+                height:'400px',
                 marginTop:'100px',
-                margin: '0 auto'
+                margin: '0 auto',
             },
             h2:{
                 textAlign:'center',
                 marginTop:'40px',
-                color:'rgb(100, 202, 212)'
+                color:'rgb(100, 202, 212)',
             }
         }
 

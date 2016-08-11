@@ -4,8 +4,11 @@ import { Router , hashHistory } from 'react-router';
 
 
 class BlogCard extends React.Component {
+    // handleClick(){
+    //     hashHistory.push(`blog/${this.props.url}`);
+    // }
     handleClick(){
-        hashHistory.push(`blog/${this.props.url}`);
+        this.context.router.push(`blog/${this.props.url}`);
     }
     render () {
         console.log(this.props.url)
@@ -57,5 +60,7 @@ class BlogCard extends React.Component {
     }
 
 }
-
+BlogCard.contextTypes = {
+    router:React.PropTypes.object.isRequired
+}
 export default BlogCard;

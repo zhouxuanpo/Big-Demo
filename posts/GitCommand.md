@@ -20,7 +20,7 @@
 `git diff  `          (这俩可选)
 
 
-- `git add . `    	889999 或者  git add -A
+- `git add . `       或者  git add -A
 
 - `git commit -m ""`
 
